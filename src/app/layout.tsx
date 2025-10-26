@@ -5,7 +5,10 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "Ecommerce Next.js App",
+  title: {
+    template: "%s | Ecommerce Next.js App",
+    default: "Ecommerce Next.js App",
+  }
 };
 
 export default function RootLayout({
