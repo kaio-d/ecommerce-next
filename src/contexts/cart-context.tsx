@@ -1,15 +1,15 @@
 "use client";
 
-import { createContext, ReactNode, use, useState } from "react";
+import { createContext, ReactNode, useContext, useState } from "react";
 
 interface CartItem {
-  productId: string;
+  productId: number;
   quantity: number;
 }
 
 interface CartContextType {
   items: CartItem[];
-  addToCart: (productId: string) => void;
+  addToCart: (productId: number) => void;
 }
 
 const CartContext = createContext({} as CartContextType);
@@ -17,23 +17,21 @@ const CartContext = createContext({} as CartContextType);
 export function CartProvider({ children }: { children: ReactNode }) {
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
 
-  function addToCart(productId: string) {
-  setCartItems((state) => {
-    const productInCart = state.some(item => item.productId === productId);
+  function addToCart(productId: number) {
+    setCartItems((state) => {
+      const productInCart = state.some(item => item.productId === productId);
 
-    if (productInCart) {
-      return state.map(item => {
-        if (item.productId === productId) {
-          return { ...item, quantity: item.quantity + 1 };
-        } else {
-          return item;
-        }
-      });
-    } else {
-      return [...state, { productId, quantity: 1 }];
-    }
-  });
-}
+      if (productInCart) {
+        return state.map(item =>
+          item.productId === productId
+            ? { ...item, quantity: item.quantity + 1 }
+            : item
+        );
+      } else {
+        return [...state, { productId, quantity: 1 }];
+      }
+    });
+  }
 
   return (
     <CartContext.Provider value={{ items: cartItems, addToCart }}>
@@ -42,4 +40,5 @@ export function CartProvider({ children }: { children: ReactNode }) {
   );
 }
 
-export const useCart = () => use(CartContext);
+
+export const useCart = () => useContext(CartContext);

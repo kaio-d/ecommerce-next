@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: {
     template: "%s | Ecommerce Next.js App",
     default: "Ecommerce Next.js App",
-  }
+  },
 };
 
 export default function RootLayout({
