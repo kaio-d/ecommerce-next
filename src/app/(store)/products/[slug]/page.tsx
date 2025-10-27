@@ -98,8 +98,6 @@ export default async function ProductPage({ params }: ProductProps) {
             </button>
           </div>
         </div>
-
-        {/* ADD TO CAR BUTTON */}
         <AddToCartButton productId={product.id}/>
       </div>
     </div>
