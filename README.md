@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛒 Ecommerce Next
 
-## Getting Started
+![Preview do Projeto](./.github/preview.png)
 
-First, run the development server:
+Um projeto **educacional** desenvolvido com o intuito de aprofundar conhecimentos em **Next.js 15**, explorando conceitos modernos como **SSR (Server-Side Rendering)** e **BFF (Backend for Frontend)**.  
+O **Ecommerce Next** simula uma loja online completa, com funcionalidades essenciais de um e-commerce, utilizando tecnologias atuais e boas práticas de desenvolvimento front-end.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Tecnologias Utilizadas
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Next.js 15** — Framework React com foco em performance e renderização híbrida (SSR/SSG).  
+- **TypeScript** — Tipagem estática para maior segurança e legibilidade do código.  
+- **Tailwind CSS** — Framework de estilização utilitária para criação rápida de interfaces responsivas.  
+- **Lucide React** — Biblioteca de ícones simples e moderna, usada para melhorar a UI.  
+- **Cypress** — Ferramenta de testes end-to-end utilizada para garantir a confiabilidade das principais funcionalidades.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## ⚙️ Funcionalidades
 
-To learn more about Next.js, take a look at the following resources:
+- 🔍 **Busca de produtos:** Filtra e exibe os produtos conforme o termo digitado na barra de pesquisa.  
+- 🛍️ **Carrinho de compras:** Permite adicionar e visualizar itens selecionados.  
+- 👀 **Pré-visualização de produto:** Abre uma página específica para exibir detalhes do item escolhido.  
+- 🧭 **Navegação dinâmica:** Implementação de rotas com e sem parâmetros, explorando a estrutura de páginas e pastas do Next.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🧠 Conceitos Estudados
 
-## Deploy on Vercel
+Durante o desenvolvimento deste projeto, foram estudados e aplicados diversos conceitos fundamentais do ecossistema **Next.js** e **Node.js**, como:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **SSR (Server-Side Rendering):** Renderização de páginas no servidor para melhor SEO e performance.  
+- **BFF (Backend For Frontend):** Camada intermediária entre o front e o back para otimização de dados e desempenho.  
+- **Estrutura de pastas do Next.js 15:** Uso de `layout`, `page`, `loading` e `[]` para criação de rotas dinâmicas e estáticas.  
+- **Renderização condicional e reatividade com hooks do React.**  
+- **Componentização e boas práticas de UI/UX com Tailwind.**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
