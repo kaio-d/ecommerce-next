@@ -1,6 +1,6 @@
 # 🛒 Ecommerce Next
 
-![Preview do Projeto](./.github/preview.png)
+![Preview do Projeto](./.github/preview.PNG)
 
 Um projeto **educacional** desenvolvido com o intuito de aprofundar conhecimentos em **Next.js 15**, explorando conceitos modernos como **SSR (Server-Side Rendering)** e **BFF (Backend for Frontend)**.  
 O **Ecommerce Next** simula uma loja online completa, com funcionalidades essenciais de um e-commerce, utilizando tecnologias atuais e boas práticas de desenvolvimento front-end.
